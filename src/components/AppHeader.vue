@@ -11,11 +11,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@use '../styles/partials/_mixins.scss' as *;
+@use '../styles/partials/_variables.scss' as *;
+
     header {
         min-height: calc(100vh);
-        background-image: url(../assets/hero/avadabarbers-homepage-hero-bg.jpg);
-        background-position: left top;
-        background-repeat: no-repeat;
-        background-size: cover;
+        @include background ('../assets/hero/avadabarbers-homepage-hero-bg.jpg', cover, left top, transparent);
     }
 </style>
