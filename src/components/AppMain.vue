@@ -6,7 +6,9 @@
         </section>
 
         <!-- Services Section -->
-        <section id="services"></section>
+        <section id="services" class="services-container">
+            <SectionDivider class="sectionDivider" />
+        </section>
 
         <!-- Products Section -->
         <section id="products">
@@ -44,13 +46,22 @@ export default {
         height: 450px;
         @include background ('../assets/other/avadabarbers-about-introbackground.jpg', cover, center top, transparent);
         position: relative;
+    }
+
+    .services-container {
+        height: 900px;
+        position: relative;
 
         .sectionDivider {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
+            filter: invert(0.95);
         }
+    }
+
+    .sectionDivider {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
     }
 
 </style>
