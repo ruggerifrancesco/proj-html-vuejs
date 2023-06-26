@@ -21,12 +21,12 @@
         <!-- Reviews Section -->
         <section id="reviews" class="reviews-container">
             <!-- Component And for in JS -->
-            <SectionDivider class="sectionDivider" />
         </section>
 
         <!-- Blog Section -->
         <section id="blog" class="blog-container">
             <!-- Component And for in JS -->
+            <SectionDivider class="sectionDivider" />
         </section>
     </main>
 </template>
@@ -79,10 +79,18 @@ export default {
 
     .reviews-container {
         height: 750px;
+
+    }
+    
+    .blog-container {
+        background-color: #f5f5f5;
+        height: 800px;
         position: relative;
 
         .sectionDivider {
             rotate: 180deg;
+            position: relative;
+            top: 0;
         }
     }
 
