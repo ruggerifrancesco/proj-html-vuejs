@@ -19,12 +19,13 @@
         </section>
 
         <!-- Reviews Section -->
-        <section id="reviews">
+        <section id="reviews" class="reviews-container">
             <!-- Component And for in JS -->
+            <SectionDivider class="sectionDivider" />
         </section>
 
         <!-- Blog Section -->
-        <section id="blog">
+        <section id="blog" class="blog-container">
             <!-- Component And for in JS -->
         </section>
     </main>
@@ -60,13 +61,6 @@ export default {
         }
     }
 
-    .sectionDivider {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-    }
-
     .products-container {
         .products-list-container {
             height: 790px;
@@ -81,6 +75,22 @@ export default {
             background-color: black;
             border-top: 4px solid red;
         }
+    }
+
+    .reviews-container {
+        height: 750px;
+        position: relative;
+
+        .sectionDivider {
+            rotate: 180deg;
+        }
+    }
+
+    .sectionDivider {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
     }
 
 </style>
