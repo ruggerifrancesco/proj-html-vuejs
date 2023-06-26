@@ -11,8 +11,11 @@
         </section>
 
         <!-- Products Section -->
-        <section id="products">
+        <section id="products" class="products-container">
             <!-- Component And for in JS -->
+
+            <div class="products-list-container"></div>
+            <div class="product-special-container"></div>
         </section>
 
         <!-- Reviews Section -->
@@ -62,6 +65,22 @@ export default {
         bottom: 0;
         left: 0;
         right: 0;
+    }
+
+    .products-container {
+        .products-list-container {
+            height: 790px;
+            @include background ('../assets/other/avadabarbers-reviewsbackground.jpg', cover, center top, transparent)
+
+        }
+
+        .product-special-container {
+            height: 450px;
+            max-width: calc( 1140px + 0px );
+            margin-top: -50px;
+            background-color: black;
+            border-top: 4px solid red;
+        }
     }
 
 </style>
