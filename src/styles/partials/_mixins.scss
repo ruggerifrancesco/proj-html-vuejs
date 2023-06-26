@@ -13,3 +13,10 @@
     // Optional
     background-color: $color;
 }
+
+@mixin imgElement ($height, $fit, $position) {
+    width: 100%;
+    height: $height;
+    object-fit: $fit;
+    object-position: $position;
+}
