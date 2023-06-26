@@ -1,8 +1,11 @@
 <template>
-  <AppHeader />
-  <AppMain />
-  <AppFooter />
+    <div class="wrapper">
+      <AppHeader />
+      <AppMain />
+      <AppFooter />
+    </div>
 </template>
+
 
 <script>
 import AppHeader from './components/AppHeader.vue';
@@ -20,6 +23,11 @@ export default {
 </script>
 
 <style lang="scss">
-  @import "bootstrap/scss/bootstrap";
-  @import "./styles/general.scss";
+@import "bootstrap/scss/bootstrap";
+@import "./styles/general.scss";
+
+  .wrapper {
+    position: relative;
+  }
+
 </style>

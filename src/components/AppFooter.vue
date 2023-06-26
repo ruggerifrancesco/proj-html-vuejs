@@ -10,6 +10,14 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-    
+<style lang="scss">
+    footer {
+       background-color: #0f0f0f; 
+       height: 620px;
+       position: fixed;
+       bottom: 0;
+       left: 0;
+       right: 0;
+       z-index: -1;
+    }
 </style>

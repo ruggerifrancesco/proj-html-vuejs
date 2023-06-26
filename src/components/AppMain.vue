@@ -46,6 +46,10 @@ export default {
 @use '../styles/partials/_mixins.scss' as *;
 @use '../styles/partials/_variables.scss' as *;
 
+    main {
+        margin-bottom: 620px;
+    }
+
     .awards-container {
         height: 450px;
         @include background ('../assets/other/avadabarbers-about-introbackground.jpg', cover, center top, transparent);
@@ -55,6 +59,7 @@ export default {
     .services-container {
         height: 900px;
         position: relative;
+        background-color: white;
 
         .sectionDivider {
             filter: invert(0.95);
@@ -62,6 +67,7 @@ export default {
     }
 
     .products-container {
+        background-color: white;
         .products-list-container {
             height: 790px;
             @include background ('../assets/other/avadabarbers-reviewsbackground.jpg', cover, center top, transparent)
@@ -79,7 +85,7 @@ export default {
 
     .reviews-container {
         height: 750px;
-
+        background-color: white;
     }
     
     .blog-container {
