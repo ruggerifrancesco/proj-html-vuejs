@@ -7,13 +7,19 @@
         <section></section>
 
         <!-- Products Section -->
-        <section></section>
+        <section>
+            <!-- Component And for in JS -->
+        </section>
 
         <!-- Reviews Section -->
-        <section></section>
+        <section>
+            <!-- Component And for in JS -->
+        </section>
 
         <!-- Blog Section -->
-        <section></section>
+        <section>
+            <!-- Component And for in JS -->
+        </section>
     </main>
 </template>
 
