@@ -16,9 +16,16 @@ export default {
 
     .section-divider {
         height: 100px;
+        display: none;
 
         img {
             @include imgElement (100%, null, null);
+        }
+    }
+
+    @media screen and (min-width: 992px){
+        .section-divider {
+            display: block;
         }
     }
     
