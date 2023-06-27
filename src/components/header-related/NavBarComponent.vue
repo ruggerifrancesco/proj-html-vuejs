@@ -26,25 +26,25 @@
                       <div class="offcanvas-body p-0">
                         <ul>
                             <li class="active">
-                                <a href="">Home</a>
+                                <a href="#">Home</a>
                             </li>
                             <li>
-                                <a href="">About Us</a>
+                                <a href="#">About Us</a>
                             </li>
                             <li>
-                                <a href="">Services</a>
+                                <a href="#services">Services</a>
                             </li>
                             <li>
-                                <a href="">Shop</a>
+                                <a href="#products">Shop</a>
                             </li>
                             <li>
-                                <a href="">Our Team</a>
+                                <a href="#">Our Team</a>
                             </li>
                             <li>
-                                <a href="">Blog</a>
+                                <a href="#blog">Blog</a>
                             </li>
                             <li>
-                                <a href="">Contact Us</a>
+                                <a href="#">Contact Us</a>
                             </li>
                         </ul>
                       </div>
@@ -117,16 +117,26 @@ export default {
                     width: 100%;
                     height: 100vh;
                     background-color: black;
+                    background-image: none;
+                    transition: background-image 0.3s ease-in-out;
+                }
 
-                    .offcanvas-header {
-                        position: absolute;
-                        right: 0;
+                .offcanvas.li-hover {
+                    background-image: url('../../assets/other/avadabarbers-about-introbackground.jpg'); /* Background image on li hover */
+                    transition: background-image 0.3s ease-in-out;
+                }
 
-                        .btn-close {
-                            outline: 1px solid red;
-                        }
+                .offcanvas-header {
+                    position: absolute;
+                    right: 0;
+
+                    .btn-close {
+                        outline: 1px solid red;
+                        color: white;
                     }
+                }
 
+                .offcanvas-body {
                     ul {
                         @include flex (column, center, center);
                         margin: 0;
@@ -140,9 +150,16 @@ export default {
                             padding: 12px 20px;
                             cursor: pointer;
 
+                            &:hover {
+                                nav >.nav-container >.user-calls-btns > .offcanvas {
+                                    width: 90%;
+                                }
+                            }
+
                             &.active a {
                                 color: #b08852;
                             }
+
                             &:hover a {
                                 color: #b08852;
                             }
