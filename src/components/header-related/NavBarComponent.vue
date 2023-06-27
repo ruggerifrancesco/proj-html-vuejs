@@ -122,6 +122,9 @@ export default {
                         position: absolute;
                         right: 0;
 
+                        .btn-close {
+                            outline: 1px solid red;
+                        }
                     }
 
                     ul {
@@ -135,11 +138,12 @@ export default {
                             width: 100%;
                             text-align: center;
                             padding: 12px 20px;
+                            cursor: pointer;
 
                             &.active a {
                                 color: #b08852;
                             }
-                            & a:hover {
+                            &:hover a {
                                 color: #b08852;
                             }
 
