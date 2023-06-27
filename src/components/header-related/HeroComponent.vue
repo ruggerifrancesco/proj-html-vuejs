@@ -74,7 +74,7 @@ export default {
         }
 
         .intro-divider {
-            height: 6px;
+            height: 4px;
             width: 50%;
             background-color: #be9359;
         }
@@ -100,12 +100,36 @@ export default {
         .hero {
             padding: $wrapper-padding-sm;
         }
+
+        .hero-introduction {
+            .intro-divider {
+                width: 40%;
+                background-color: #be9359;
+            }
+        }
     }
 
     @media (min-width: 768px) {
         .hero {
             padding: $wrapper-padding-md;
         }  
+
+        .hero-introduction {
+            text-align: start;
+
+            .title-intro {
+                text-align: start;
+                font-size: 5rem;
+            }
+            .divider-container {
+                @include flex (row, flex-start, flex-start);
+            }
+            
+            .intro-divider {
+                height: 6px;
+                background-color: #be9359;
+            }
+        }
     }
 
     @media screen and (min-width: 1024px) {
@@ -133,14 +157,9 @@ export default {
         }
 
         .hero-introduction {
-            text-align: start;
             .title-intro {
                 text-align: start;
                 font-size: 5.5rem;
-            }
-
-            .divider-container {
-                @include flex (row, flex-start, flex-start);
             }
 
             .intro-divider {

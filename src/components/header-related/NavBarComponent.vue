@@ -123,11 +123,11 @@ export default {
         nav {
             .nav-container {
                 padding: $wrapper-padding-md;
-            }  
 
-            .brand-container {
-                width: 20%;
-            }
+                .brand-container {
+                    width: 20%;
+                }
+            }  
         }
     }
 
