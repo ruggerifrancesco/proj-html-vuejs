@@ -107,9 +107,9 @@ export default {
             display: block !important;
             height: 450px;
             max-width: calc( 1140px + 0px );
-            margin-top: -50px;
             background-color: black;
             border-top: 4px solid red;
+            margin: -50px auto 0;
         }
         .awards-container {
             .section-wrapper {
