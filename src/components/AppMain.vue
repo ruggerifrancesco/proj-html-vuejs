@@ -75,6 +75,13 @@ export default {
         }
 
         .product-special-container {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        .product-special-container {
+            display: block !important;
             height: 450px;
             max-width: calc( 1140px + 0px );
             margin-top: -50px;
