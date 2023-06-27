@@ -23,3 +23,15 @@ h1,h2,h3,h4,h5,h6 {
 .wrapper-container {
     max-width: 1600px;
 }
+
+.btn-custom {
+    outline: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid #be9359;
+    color: #be9359;
+    padding: 17px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-flex;
+}
