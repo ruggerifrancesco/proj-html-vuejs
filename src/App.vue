@@ -1,9 +1,7 @@
 <template>
-    <div class="wrapper-app">
-      <AppHeader />
-      <AppMain />
-      <AppFooter />
-    </div>
+  <AppHeader />
+  <AppMain />
+  <AppFooter />
 </template>
 
 
@@ -25,9 +23,5 @@ export default {
 <style lang="scss">
 @import "bootstrap/scss/bootstrap";
 @import "./styles/general.scss";
-
-  .wrapper-app {
-    position: relative;
-  }
 
 </style>
