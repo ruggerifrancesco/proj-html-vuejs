@@ -1,12 +1,28 @@
 <template>
-    <nav>
+    <nav :class="{ 'scrolled': isNavScrolled }">
         
     </nav>
 </template>
 
 <script>
 export default {
-   name: 'NavBarComponent',
+    name: 'NavBarComponent',
+    data() {
+        return {
+            isNavScrolled: false,
+        }
+    },
+    mounted() {
+        window.addEventListener('scroll', this.handleScroll);
+    },
+    destroyed() {
+        window.removeEventListener('scroll', this.handleScroll);
+    },
+    methods: {
+        handleScroll() {
+            this.isNavScrolled = window.pageYOffset > 0;
+        },
+    },
 }
 </script>
 <style lang="scss" scoped>
@@ -26,6 +42,11 @@ export default {
             right: 0;
             top: 0;
             z-index: 10;
+            transition: background-color 0.3s ease-in-out;
+
+            &.scrolled {
+              background-color: black;
+            }
         }
     }
 </style>
