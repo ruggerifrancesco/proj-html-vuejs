@@ -128,7 +128,8 @@ export default {
 
         .hero-container {
             max-width: $wrapper-maxw;
-            padding-top: 90px;
+            display: flex;
+            align-items: center;
         }
 
         .hero-introduction {
