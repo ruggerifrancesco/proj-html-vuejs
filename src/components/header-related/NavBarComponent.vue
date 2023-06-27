@@ -11,7 +11,7 @@ export default {
 </script>
 <style lang="scss" scoped>
     nav {
-        height: 150px;
+        min-height: calc(150px);
         background-color: black;
         position: fixed;
         left: 0;
