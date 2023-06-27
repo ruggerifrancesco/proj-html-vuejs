@@ -1,12 +1,20 @@
 <template>
     <header>
-        
+        <NavBarComponent />
+        <HeroComponent />
     </header>
 </template>
 
 <script>
+import NavBarComponent from './header-related/NavBarComponent.vue';
+import HeroComponent from './header-related/HeroComponent.vue';
+
 export default {
     name: 'AppHeader',
+    components: {
+        NavBarComponent,
+        HeroComponent,
+    }
 }
 </script>
 
