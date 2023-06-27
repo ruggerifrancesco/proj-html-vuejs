@@ -3,9 +3,10 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 
 // Single Icons Handling
-import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
+
 
 // Add icons to the library
-library.add(faUserSecret)
+library.add(faBars);
 
 export { FontAwesomeIcon }
