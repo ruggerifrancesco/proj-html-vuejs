@@ -1,7 +1,9 @@
 <template>
     <header>
         <NavBarComponent />
-        <HeroComponent />
+        <div class="hero-wrapper">
+            <HeroComponent />
+        </div>
     </header>
 </template>
 
@@ -22,15 +24,15 @@ export default {
 @use '../styles/partials/_mixins.scss' as *;
 @use '../styles/partials/_variables.scss' as *;
 
-    header {
-        margin-top: 150px;
+    .hero-wrapper {
         min-height: calc(100vh);
         @include background ('../assets/hero/avadabarbers-homepage-hero-bg.jpg', cover, left top, transparent);
     }
 
     @media screen and (min-width: 1024px) {
-        header {
+        .hero-wrapper {
             margin-top: 0;
         }
     }
+    
 </style>
