@@ -2,6 +2,13 @@
     <main>
         <!-- Awards Section -->
         <section id="awards" class="awards-container">
+            <div class="section-wrapper">
+                <span class="section-subtitle">Award Winning</span>
+                <h3>Pro Barbers</h3>
+                <a href="#" class="btn-custom">
+                    Meet your new barber
+                </a>
+            </div>
             <SectionDivider class="sectionDivider" />
         </section>
 
@@ -50,10 +57,22 @@ export default {
         margin-bottom: 620px;
     }
 
+    h3 {
+        color: #b0b0b0;
+        font-size: 3rem;
+        margin-bottom: 30px;
+    }
+
     .awards-container {
-        height: 450px;
         @include background ('../assets/other/avadabarbers-about-introbackground.jpg', cover, center top, transparent);
         position: relative;
+        text-align: center;
+        padding: 6% 30px;
+
+        .section-wrapper {
+            width: 100%;
+            padding: 0;
+        }
     }
 
     .services-container {
@@ -80,6 +99,10 @@ export default {
     }
 
     @media screen and (min-width: 1024px) {
+
+        h3 {
+            font-size: 5rem;
+        }
         .product-special-container {
             display: block !important;
             height: 450px;
@@ -88,8 +111,13 @@ export default {
             background-color: black;
             border-top: 4px solid red;
         }
-    }
+        .awards-container {
+            .section-wrapper {
+                padding: 28px 0 78px 0;
+            }
+        }
 
+    }
     .reviews-container {
         height: 750px;
         background-color: white;
