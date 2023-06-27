@@ -140,9 +140,11 @@ export default {
             top: 0;
             z-index: 10;
             transition: background-color 0.3s ease-in-out;
+            transition: min-height 0.8s ease-out, 0.15s ease-in;
 
             &.scrolled {
               background-color: black;
+              min-height: calc($navBar-height-scrolled);
             }
 
             .nav-container {
