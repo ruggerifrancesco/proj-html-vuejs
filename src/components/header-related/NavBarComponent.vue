@@ -15,29 +15,38 @@
                 </div>
 
                 <div class="primary-menu">
-                    <a class="nav-btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    <a class="nav-btn" data-bs-toggle="offcanvas" href="#offcanvasMenu" role="button" aria-controls="offcanvasMenu">
                         <font-awesome-icon :icon="['fas', 'bars']" />
                     </a>
 
-                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasExampleLabel">
                       <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                       </div>
-                      <div class="offcanvas-body">
-                        <div>
-                          Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-                        </div>
-                        <div class="dropdown mt-3">
-                          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                            Dropdown button
-                          </button>
-                          <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                          </ul>
-                        </div>
+                      <div class="offcanvas-body p-0">
+                        <ul>
+                            <li class="active">
+                                <a href="">Home</a>
+                            </li>
+                            <li>
+                                <a href="">About Us</a>
+                            </li>
+                            <li>
+                                <a href="">Services</a>
+                            </li>
+                            <li>
+                                <a href="">Shop</a>
+                            </li>
+                            <li>
+                                <a href="">Our Team</a>
+                            </li>
+                            <li>
+                                <a href="">Blog</a>
+                            </li>
+                            <li>
+                                <a href="">Contact Us</a>
+                            </li>
+                        </ul>
                       </div>
                     </div>
                 </div>
@@ -102,6 +111,46 @@ export default {
 
                 .nav-btn {
                     color: #b08852;
+                }
+
+                .offcanvas {
+                    width: 100%;
+                    height: 100vh;
+                    background-color: black;
+
+                    .offcanvas-header {
+                        position: absolute;
+                        right: 0;
+
+                    }
+
+                    ul {
+                        @include flex (column, center, center);
+                        margin: 0;
+                        padding: 2rem;
+                        width: 100%;
+                        height: 100%;
+
+                        li {
+                            width: 100%;
+                            text-align: center;
+                            padding: 12px 20px;
+
+                            &.active a {
+                                color: #b08852;
+                            }
+                            & a:hover {
+                                color: #b08852;
+                            }
+
+                            a {
+                                color: white;
+                                text-decoration: none;
+                                font-size: 1.8rem;
+                                font-weight: 400;
+                            }
+                        }
+                    }
                 }
             }
         }
