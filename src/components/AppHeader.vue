@@ -25,7 +25,7 @@ export default {
 @use '../styles/partials/_variables.scss' as *;
 
     .hero-wrapper {
-        min-height: calc(100vh);
+        height: calc(100vh);
         @include background ('../assets/hero/avadabarbers-homepage-hero-bg.jpg', cover, left top, transparent);
     }
 

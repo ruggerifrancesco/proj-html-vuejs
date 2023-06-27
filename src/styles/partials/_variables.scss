@@ -1,2 +1,16 @@
 $navBar-height: 150px;
 $grid-breakpoint-1024: 1024px;
+$wrapper-maxw: 1185.6px;
+$wrapper-padding-xs: 0 35px;
+$wrapper-padding-sm: 0 30px;
+$wrapper-padding-md: 0 25px;
+
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);

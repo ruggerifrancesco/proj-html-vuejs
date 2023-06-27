@@ -1,7 +1,7 @@
 <template>
     <section class="hero">
         <div class="container-fluid hero-container">
-          <div class="row hero-row">
+          <div class="row">
             <div class="col col-custom-6">
                 <div class="hero-introduction">
 
@@ -38,19 +38,33 @@ export default {
 @use '../../styles/partials/_mixins.scss' as *;
 @use '../../styles/partials/_variables.scss' as *;
 
+    .hero {
+        height: 100%;
+        padding: $wrapper-padding-xs;
+        .hero-container {
+            height: 100%;
+            .row {
+                height: 100%; 
+            }
+        }
+    }
+
+    .col-custom-6 {
+        padding: 0 0.4rem;
+    }
+
     .hero-introduction {
         padding: 0;
         text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @include flex (column, center, null);
+        height: 100%;
 
         .title-container {
             margin-bottom: 20px;
         }
         .title-intro {
             color: #e8e8e8;
-            font-size: 5rem;
+            font-size: 4rem;
             text-align: center;
         }
 
@@ -82,7 +96,27 @@ export default {
         display: none;
     }
 
+    @media (min-width: 576px) {
+        .hero {
+            padding: $wrapper-padding-sm;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .hero {
+            padding: $wrapper-padding-md;
+        }  
+    }
+
     @media screen and (min-width: 1024px) {
+
+        .hero {
+            .hero-container {
+                .row {
+                    height: auto;
+                }
+            }
+        }
 
         .col-custom-6 {
             flex: 0 0 auto;
@@ -93,7 +127,7 @@ export default {
         }
 
         .hero-container {
-            max-width: 1185.6px;
+            max-width: $wrapper-maxw;
             padding-top: 90px;
         }
 
