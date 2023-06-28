@@ -29,7 +29,7 @@ export default {
         @include background ('../../assets/other/avadabarbers-about-introbackground.jpg', cover, center top, transparent);
         position: relative;
         text-align: center;
-        padding: 6% 30px;
+        padding: 10% 30px;
         .section-wrapper {
             width: 100%;
             padding: 0;
@@ -41,5 +41,8 @@ export default {
     @media screen and (min-width: 768px) {
     }
     @media screen and (min-width: 1024px) {
+        .awards-container {
+            padding: 6% 30px 12% 30px;
+        }
     }
 </style>
