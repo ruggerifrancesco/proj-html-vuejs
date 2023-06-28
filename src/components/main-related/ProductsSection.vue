@@ -1,14 +1,13 @@
 <template>
     <section id="products" class="products-container">
 
-        <!-- Component And for in JS -->
         <div class="products-list-mobile">
             <span class="section-subtitle">
                 We have you covered
             </span>
             <h3>Avada Grooming Products</h3>
 
-            <div class="products-list-wrapper">
+            <div class="products-list-wrapper mobile">
                 <div class="btn-scroll left">
                     <font-awesome-icon :icon="['fas', 'chevron-left']" />
                 </div>
@@ -35,7 +34,7 @@
             </span>
             <h3>Avada Grooming Products</h3>
         
-            <div class="products-list-wrapper">
+            <div class="products-list-wrapper desktop">
 
                 <article v-for="product in productsArray" class="product-card">
                     <img :src="getImagePath(product.src)" :alt="product.name">
