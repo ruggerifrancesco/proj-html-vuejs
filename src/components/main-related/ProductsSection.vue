@@ -7,7 +7,7 @@
                 <span class="section-subtitle">
                     We have you covered
                 </span>
-                <h4>Avada Grooming Products</h4>
+                <h3>Avada Grooming Products</h3>
 
                 <div class="products-list-wrapper">
                     <article class="product-card">
