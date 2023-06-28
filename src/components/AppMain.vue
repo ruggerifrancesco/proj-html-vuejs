@@ -3,7 +3,7 @@
         <AwardsSection />
         <ServicesSection />
         <ProductsSection :productsArray="productsList" />
-        <ReviewsSection />
+        <ReviewsSection :reviewsArray="reviewsList"/>
 
         <!-- Blog Section -->
         <section id="blog" class="blog-container">
@@ -61,6 +61,23 @@ export default {
                     type: 'normal',
                     name: 'Razor',
                     price: '$30.00',
+                },
+            ],
+            reviewsList: [
+                {
+                    src: 'gallery/avadabarbers-trimcut-gallery6.jpg',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis eleifend ante ut sagittis. Sed sodales, urna et imperdiet placerat, ex nisi aliquam orci, ac varius odio libero et arcu.',
+                    name: 'John Doe'
+                },
+                {
+                    src: 'gallery/avadabarbers-trimcut-gallery7.jpg',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis eleifend ante ut sagittis. Sed sodales, urna et imperdiet placerat, ex nisi aliquam orci, ac varius odio libero et arcu.',
+                    name: 'Pete Jones'
+                },
+                {
+                    src: 'gallery/avadabarbers-trimcut-gallery3.jpg',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis eleifend ante ut sagittis. Sed sodales, urna et imperdiet placerat, ex nisi aliquam orci, ac varius odio libero et arcu.',
+                    name: 'Mark Wilson'
                 },
             ]
         }
