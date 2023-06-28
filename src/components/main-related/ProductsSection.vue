@@ -15,8 +15,8 @@
                 </span>
                 <h4>Shaving Butter</h4>
                 <p> 
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias harum corporis, illo pariatur optio et nisi 
-                    officiis iste perferendis? Eos esse aliquid quae nesciunt qui officia soluta nulla incidunt maiores.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque laoreet enim est, vel molestie 
+                    dolor ultrices ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
 
                 <a href="#" class="btn-custom">
