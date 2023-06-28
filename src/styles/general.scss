@@ -16,6 +16,12 @@ h1,h2,h3,h4,h5,h6 {
     font-family: 'Abril Fatface', cursive;
 }
 
+h3 {
+    color: #b0b0b0;
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
 ul, ol {
     list-style: none;
     padding: 0;
@@ -40,4 +46,17 @@ ul, ol {
 .section-subtitle {
     color: #be9359;
     text-transform: uppercase;
+}
+
+.sectionDivider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+@media screen and (min-width: 1024px) {
+    h3 {
+        font-size: 5rem;
+    }
 }
