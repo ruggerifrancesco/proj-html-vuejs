@@ -83,6 +83,7 @@ export default {
         padding: $wrapper-padding-xs;
         text-align: center;
         .section-wrapper {
+            padding: 30px 0 15% 0;
             .row {
                 @include flex (column, flex-start, center);
                 .service-icon {
@@ -103,13 +104,18 @@ export default {
     @media screen and (min-width: 576px) {
     .services-container {
             padding: $wrapper-padding-sm;
+
+            .section-wrapper {
+                padding: 30px 0 15% 0;
             }
+        }
     }
 
     @media screen and (min-width: 768px) {
         .services-container {
             padding: $wrapper-padding-md;
             .section-wrapper {
+
                 .row {
                     .service-icon img {
                         aspect-ratio: 4.5/1;
@@ -124,7 +130,7 @@ export default {
             .section-wrapper {
                 max-width: $wrapper-maxw;
                 margin: 0 auto;
-                padding: 28px 0 15rem 0;
+                padding: 28px 0 12% 0;
                 .row {
                     @include flex (row, flex-start, flex-start);
                     .service-icon img {
