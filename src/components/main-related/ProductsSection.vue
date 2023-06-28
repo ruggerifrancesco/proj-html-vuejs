@@ -10,15 +10,17 @@
 
                 <div class="products-list-wrapper">
                     <div class="btn-scroll left">
-                        ciao
+                        <font-awesome-icon :icon="['fas', 'chevron-left']" />
                     </div>
+
                     <article class="product-card">
                         <img src="../../assets/products/brush_dark.png" alt="">
                         <h4>Brush</h4>
                         <span class="price-product">$15.00</span>
                     </article>
+
                     <div class="btn-scroll right">
-                        ciao
+                        <font-awesome-icon :icon="['fas', 'chevron-right']" />
                     </div>
                 </div>
 
@@ -141,6 +143,11 @@ export default {
                     position: absolute;
                     transform: translateY(-50%);
                     cursor: pointer;
+                    color: white;
+                    width: 2rem;
+                    height: 2rem;
+                    @include flex (row, center, center);
+                    background-color: rgba(0, 0, 0, 0.5);
 
                     &.left {
                         top: 50%;
