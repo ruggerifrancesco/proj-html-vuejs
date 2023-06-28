@@ -10,7 +10,7 @@
 
                 <div class="shop-redirect">
                     <a href="#" class="shop-btn">
-                        <font-awesome-icon :icon="['fas', 'bars']" />
+                        <font-awesome-icon :icon="['fas', 'cart-shopping']" />
                     </a>
                 </div>
 
