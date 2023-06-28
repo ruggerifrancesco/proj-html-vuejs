@@ -10,8 +10,18 @@
             </div>
 
             <div class="content-product">
-                <span class="section-subtitle">Mens Grooming</span>
-                <h3>Services</h3>
+                <span class="section-subtitle">
+                    This months featured product
+                </span>
+                <h4>Shaving Butter</h4>
+                <p> 
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias harum corporis, illo pariatur optio et nisi 
+                    officiis iste perferendis? Eos esse aliquid quae nesciunt qui officia soluta nulla incidunt maiores.
+                </p>
+
+                <a href="#" class="btn-custom">
+                    Buy Now
+                </a>
             </div>
         </div>
     </section>
@@ -57,7 +67,6 @@ export default {
             }
 
             .product-special-container {
-                display: block !important;
                 height: 450px;
                 max-width: calc( 1140px + 0px );
                 background-color: black;
@@ -72,6 +81,18 @@ export default {
 
                     img {
                         @include imgElement ( 100%, cover, top center);
+                    }
+                }
+
+                .content-product {
+                    width: 60%;
+                    padding: 68.4px 55px 68.4px 68.4px;
+
+                    p {
+                        line-height: 32.4px;
+                        color: #686868;
+                        font-size: 1.1rem;
+                        margin-bottom: 1.25rem;
                     }
                 }
             }
