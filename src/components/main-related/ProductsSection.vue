@@ -2,7 +2,25 @@
     <section id="products" class="products-container">
 
             <!-- Component And for in JS -->
-            <div class="products-list-mobile"></div>
+            <div class="products-list-mobile">
+                <span class="section-subtitle">
+                    We have you covered
+                </span>
+                <h3>Avada Grooming Products</h3>
+
+                <div class="products-list-wrapper">
+                    <article class="product-card">
+                        <img src="../../assets/products/brush_dark.png" alt="">
+                        <h4>Brush</h4>
+                        <span class="price-product">$15.00</span>
+                    </article>
+                </div>
+
+                <a href="#" class="btn-custom">
+                    Shop our Product Range
+                </a>
+            </div>
+
             <div class="products-list-desktop">
                 <span class="section-subtitle">
                     We have you covered
@@ -95,7 +113,21 @@ export default {
 
         .products-list-mobile {
             display: block;
-            height: 790px;
+            text-align: center;
+            padding: 6% 30px;
+
+            .section-subtitle {
+                margin-bottom: 2rem;
+            }
+
+            .product-card {
+                margin-bottom: 4rem;
+
+                img {
+                    @include imgElement ( auto, contain, top center);
+                    aspect-ratio: 1/1;
+                }
+            }
         }
         .products-list-desktop,
         .product-special-container {
@@ -104,6 +136,11 @@ export default {
     }
 
     @media screen and (min-width: 576px) {
+        .products-list-mobile {
+            h3 {
+                font-size: 4rem;
+            }
+        }
     }
     @media screen and (min-width: 768px) {
     }
