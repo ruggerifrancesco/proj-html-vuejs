@@ -9,11 +9,17 @@
                 <h3>Avada Grooming Products</h3>
 
                 <div class="products-list-wrapper">
+                    <div class="btn-scroll left">
+                        ciao
+                    </div>
                     <article class="product-card">
                         <img src="../../assets/products/brush_dark.png" alt="">
                         <h4>Brush</h4>
                         <span class="price-product">$15.00</span>
                     </article>
+                    <div class="btn-scroll right">
+                        ciao
+                    </div>
                 </div>
 
                 <a href="#" class="btn-custom">
@@ -120,12 +126,31 @@ export default {
                 margin-bottom: 2rem;
             }
 
-            .product-card {
-                margin-bottom: 4rem;
+            .products-list-wrapper {
+                position: relative;
+                .product-card {
+                    margin-bottom: 4rem;
 
-                img {
-                    @include imgElement ( auto, contain, top center);
-                    aspect-ratio: 1/1;
+                    img {
+                        @include imgElement ( auto, contain, top center);
+                        aspect-ratio: 1/1;
+                    }
+                }
+
+                .btn-scroll {
+                    position: absolute;
+                    transform: translateY(-50%);
+                    cursor: pointer;
+
+                    &.left {
+                        top: 50%;
+                        left: 0;
+                    }
+
+                    &.right {
+                        top: 50%;
+                        right: 0;
+                    }
                 }
             }
         }
