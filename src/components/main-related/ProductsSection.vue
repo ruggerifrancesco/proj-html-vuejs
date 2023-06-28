@@ -93,7 +93,12 @@ export default {
             @include background ('../../assets/other/avadabarbers-reviewsbackground.jpg', cover, center top, transparent);
         }
 
-        .products-list-desktop {
+        .products-list-mobile {
+            display: block;
+            height: 790px;
+        }
+        .products-list-desktop,
+        .product-special-container {
             display: none;
         }
     }
