@@ -2,7 +2,7 @@
     <main>
         <AwardsSection />
         <ServicesSection />
-        <ProductsSection />
+        <ProductsSection :productsArray="productsList" />
 
         <!-- Reviews Section -->
         <section id="reviews" class="reviews-container">
@@ -30,7 +30,43 @@ export default {
         AwardsSection,
         ServicesSection, 
         ProductsSection,
-    }
+    },
+    data() {
+        return {
+            productsList: [
+                {
+                    src: 'products/safety_set.png',
+                    type: 'normal',
+                    name: 'Safety Set',
+                    price: '$45.00',
+                },
+                {
+                    src: 'products/brush_dark.png',
+                    type: 'normal',
+                    name: 'Brush',
+                    price: '$15.00',
+                },
+                {
+                    src: 'products/scissors.png',
+                    type: 'normal',
+                    name: 'Scissors',
+                    price: '$85.00',
+                },
+                {
+                    src: 'products/hot_oil_dark.png',
+                    type: 'normal',
+                    name: 'Hot Oil',
+                    price: '$15.00',
+                },
+                {
+                    src: 'products/straight_razor_dark.png',
+                    type: 'normal',
+                    name: 'Razor',
+                    price: '$30.00',
+                },
+            ]
+        }
+    },
 }
 </script>
 

@@ -1,66 +1,53 @@
 <template>
     <section id="products" class="products-container">
 
-            <!-- Component And for in JS -->
-            <div class="products-list-mobile">
-                <span class="section-subtitle">
-                    We have you covered
-                </span>
-                <h3>Avada Grooming Products</h3>
+        <!-- Component And for in JS -->
+        <div class="products-list-mobile">
+            <span class="section-subtitle">
+                We have you covered
+            </span>
+            <h3>Avada Grooming Products</h3>
 
-                <div class="products-list-wrapper">
-                    <div class="btn-scroll left">
-                        <font-awesome-icon :icon="['fas', 'chevron-left']" />
-                    </div>
-
-                    <article class="product-card">
-                        <img src="../../assets/products/brush_dark.png" alt="">
-                        <h4>Brush</h4>
-                        <span class="price-product">$15.00</span>
-                    </article>
-
-                    <div class="btn-scroll right">
-                        <font-awesome-icon :icon="['fas', 'chevron-right']" />
-                    </div>
+            <div class="products-list-wrapper">
+                <div class="btn-scroll left">
+                    <font-awesome-icon :icon="['fas', 'chevron-left']" />
                 </div>
 
-                <a href="#" class="btn-custom">
-                    Shop our Product Range
-                </a>
+               <article class="product-card">
+                   <img src="../../assets/products/brush_dark.png" alt="">
+                   <h4>Brush</h4>
+                   <span class="price-product">$15.00</span>
+               </article>
+
+                <div class="btn-scroll right">
+                    <font-awesome-icon :icon="['fas', 'chevron-right']" />
+                </div>
             </div>
 
-            <div class="products-list-desktop">
-                <span class="section-subtitle">
-                    We have you covered
-                </span>
-                <h3>Avada Grooming Products</h3>
+            <a href="#" class="btn-custom">
+                Shop our Product Range
+            </a>
+        </div>
 
-                <div class="products-list-wrapper">
-                    <article class="product-card">
-                        <img src="../../assets/products/brush_dark.png" alt="">
-                        <h4>Brush</h4>
-                        <span class="price-product">$15.00</span>
-                    </article>
-                    <article class="product-card">
-                        <img src="../../assets/products/scissors.png" alt="">
-                        <h4>Scissors</h4>
-                        <span class="price-product">$85.00</span>
-                    </article>
-                    <article class="product-card">
-                        <img src="../../assets/products/hot_oil_dark.png" alt="">
-                        <h4>Hot Oil</h4>
-                        <span class="price-product">$15.00</span>
-                    </article>
-                    <article class="product-card">
-                        <img src="../../assets/products/straight_razor_dark.png" alt="">
-                        <h4>Straight Razor</h4>
-                        <span class="price-product">$30.00</span>
-                    </article>
-                </div>
+        <div class="products-list-desktop">
+            <span class="section-subtitle">
+                We have you covered
+            </span>
+            <h3>Avada Grooming Products</h3>
+        
+            <div class="products-list-wrapper">
 
-                <a href="#" class="btn-custom">
-                    Shop our Product Range
-                </a>
+                <article v-for="product in productsArray" class="product-card">
+                    <img :src="getImagePath(product.src)" :alt="product.name">
+                    <h4>{{ product.name }}</h4>
+                    <span class="price-product">{{ product.price }}</span>
+                </article>
+
+            </div>
+
+            <a href="#" class="btn-custom">
+                Shop our Product Range
+            </a>
         </div>
 
         <div class="product-special-container">
@@ -89,6 +76,14 @@
 <script>
 export default {
     name: 'ProductsSection',
+    props: {
+        productsArray: Array,
+    },
+    methods: {
+        getImagePath: function(img) {
+            return new URL(`../../assets/${img}`, import.meta.url).href;
+        }
+    },
 }
 </script>
 
@@ -195,7 +190,7 @@ export default {
                     margin-bottom: 55px;
 
                     .product-card {
-                        width: calc(100% / 4);
+                        width: calc(100% / 5);
 
                         img {
                             @include imgElement ( auto, contain, top center);
