@@ -60,6 +60,23 @@ export default {
 @use '../../styles/partials/_mixins.scss' as *;
 @use '../../styles/partials/_variables.scss' as *;
 
+    h4 {
+        color: #be9359;
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    p {
+        color: #686868;
+        margin-bottom: 20px;
+        font-size: 1.1rem;
+        line-height: 2rem;
+    }
+
+    .col {
+        padding: 30px 50px;
+    }
+
     .services-container {
         position: relative;
         background-color: white;
@@ -68,9 +85,13 @@ export default {
         .section-wrapper {
             .row {
                 @include flex (column, flex-start, center);
-                .service-icon img {
-                    @include imgElement (auto, contain, center top);
-                    aspect-ratio: 5/1;
+                .service-icon {
+                    margin-bottom: 2rem;
+
+                    img {
+                        @include imgElement (auto, contain, center top);
+                        aspect-ratio: 5/1;
+                    }
                 }
             }
         }
@@ -97,7 +118,7 @@ export default {
             }
         }
     }
-    
+
     @media screen and (min-width: 1024px) {
         .services-container {
             .section-wrapper {
