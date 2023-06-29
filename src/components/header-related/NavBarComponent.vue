@@ -118,12 +118,7 @@ export default {
                     height: 100vh;
                     background-color: black;
                     background-image: none;
-                    transition: background-image 0.3s ease-in-out;
-                }
-
-                .offcanvas.li-hover {
-                    background-image: url('../../assets/other/avadabarbers-about-introbackground.jpg'); /* Background image on li hover */
-                    transition: background-image 0.3s ease-in-out;
+                    transition: all 0.3s ease-in-out;
                 }
 
                 .offcanvas-header {
