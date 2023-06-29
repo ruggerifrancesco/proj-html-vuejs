@@ -7,8 +7,18 @@
 </template>
 
 <script>
+import SectionDivider from '../misc-components/SectionDivider.vue'
+
 export default {
-    name: 'BlogSection'
+    name: 'BlogSection',
+    components: {
+        SectionDivider, 
+    },
+    methods: {
+        getImagePath: function(img) {
+            return new URL(`../../assets/${img}`, import.meta.url).href;
+        }
+    },
 }
 </script>
 
