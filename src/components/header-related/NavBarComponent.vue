@@ -131,8 +131,7 @@ export default {
                     right: 0;
 
                     .btn-close {
-                        outline: 1px solid red;
-                        color: white;
+                        filter: brightness(0) invert(1);
                     }
                 }
 
