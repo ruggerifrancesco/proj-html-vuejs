@@ -39,9 +39,11 @@
             <div class="products-list-wrapper desktop">
 
                 <article v-for="product in productsArray" class="product-card">
-                    <img :src="getImagePath(product.src)" :alt="product.name">
-                    <h4>{{ product.name }}</h4>
-                    <span class="price-product">{{ product.price }}</span>
+                    <a href="#">
+                        <img :src="getImagePath(product.src)" :alt="product.name">
+                        <h4>{{ product.name }}</h4>
+                        <span class="price-product">{{ product.price }}</span>
+                    </a>
                 </article>
 
             </div>
