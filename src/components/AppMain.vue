@@ -104,7 +104,7 @@ export default {
 @use '../styles/partials/_variables.scss' as *;
 
     main {
-        margin-bottom: 620px;
+        margin-bottom: $footer-height;
 
         // Fix bug in mobile version, gap between reviews and blog section
         background-color: white;

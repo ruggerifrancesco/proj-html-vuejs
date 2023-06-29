@@ -15,12 +15,18 @@
 
                         <div class="col" v-for="article in blogsArray">
                             <a href="#">
+
                                 <div class="blog-image-wrapper"
                                     @mouseover="addHoverClass($event)"
                                     @mouseout="removeHoverClass($event)">
-                                    <img :src="getImagePath(article.src)" :alt="article.title">
+
+                                    <div class="blog-image-container">
+                                        <img :src="getImagePath(article.src)" :alt="article.title">
+                                    </div>
+
                                 </div>
                                 <h4>{{ article.title }}</h4>
+
                             </a>
                             <p>
                                 {{ article.text }}
@@ -85,8 +91,15 @@ export default {
                     padding: 0;
                     .blog-image-wrapper {
                         overflow: hidden;
-                        height: 250px;
+                        height: 450px;
                         margin-bottom: 15px;
+
+                        .blog-image-container {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            height: 100%;
+                        }
 
                         img {
                             @include imgElement (100%, cover, top center);
@@ -142,6 +155,21 @@ export default {
                     .col {
                         width: calc(100% / 3);
                         padding: 0 1rem;
+
+                        .blog-image-wrapper{
+                            height: 0;
+                            padding-bottom: 63%;
+                            position: relative;
+                            
+                            .blog-image-container {
+                                position: absolute;
+                                inset: 0;
+                            }
+
+                            img {
+                                @include imgElement (100%, contain, top center);
+                            }
+                        }
                     
                         h4 {
                             font-size: 2.2rem;

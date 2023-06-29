@@ -11,9 +11,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@use '../styles/partials/_mixins.scss' as *;
+@use '../styles/partials/_variables.scss' as *;
+
     footer {
        background-color: #0f0f0f; 
-       height: 620px;
+       height: $footer-height;
        position: fixed;
        bottom: 0;
        left: 0;
