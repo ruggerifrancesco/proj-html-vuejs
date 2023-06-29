@@ -178,6 +178,7 @@ export default {
             p {
                 font-size: 0.8rem;
                 color: #606060;
+                margin: 0;
 
                 strong {
                     color: $primary-color;
