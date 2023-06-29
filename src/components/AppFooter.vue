@@ -63,7 +63,11 @@
         </section>
 
         <section class="footer-bottom">
-
+            <div class="section-wrapper">
+                <p>
+                    © Copyright 2012 - 2023 | Avada Theme by <strong>ThemeFusion</strong> | All Rights Reserved | Powered by <strong>WordPress</strong>
+                </p>
+            </div>
         </section>
     </footer>
 </template>
@@ -88,6 +92,7 @@ export default {
     .footer-bottom {
         .section-wrapper {
             padding: $wrapper-padding-xs;
+            text-align: center;
         }
     }
 
@@ -104,12 +109,11 @@ export default {
                 .col {
                     @include flex(column, flex-start, center);
                     padding: 0 2%;
-                    text-align: center;
                     color: #686868;
 
                     .image-wrapper {
                         margin-bottom: 30px;
-                        
+
                         img {
                             @include imgElement (auto, contain, top center);
                         }
@@ -121,7 +125,7 @@ export default {
                     }
 
                     .logo-wrapper {
-                        width: 60%;
+                        width: 40%;
                         margin-bottom: 30px;
 
                         img {
@@ -161,6 +165,21 @@ export default {
         bottom: 0;
         left: 0;
         right: 0;
+
+        .section-wrapper {
+            @include flex (row, center, center);
+            height: 100%;
+
+            p {
+                font-size: 0.8rem;
+                color: #606060;
+
+                strong {
+                    color: #be9359;
+                    font-weight: 400;
+                }
+            }
+        }
     }
 
     @media screen and (min-width: 576px) {
@@ -183,6 +202,11 @@ export default {
         .footer-primary {
         .container-fluid {
             .row {
+                .col{
+                    .logo-wrapper {
+                        width: 60%;
+                    }
+                }
                 .col:first-child,
                 .col:last-child {
                     display: block;
