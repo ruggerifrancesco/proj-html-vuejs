@@ -67,6 +67,12 @@ export default {
     },
     mounted() {
         window.addEventListener('scroll', this.handleScroll);
+
+        // OffCanvas
+        const offcanvasLinks = document.querySelectorAll('.offcanvas-body ul li a');
+        offcanvasLinks.forEach(link => {
+            link.addEventListener('click', this.closeOffcanvas);
+        });
     },
     destroyed() {
         window.removeEventListener('scroll', this.handleScroll);
@@ -74,6 +80,11 @@ export default {
     methods: {
         handleScroll() {
             this.isNavScrolled = window.pageYOffset > 0;
+        },
+        closeOffcanvas() {
+            const offcanvasMenu = document.getElementById('offcanvasMenu');
+            const offcanvasInstance = bootstrap.Offcanvas.getInstance(offcanvasMenu);
+            offcanvasInstance.hide();
         },
     },
 }
