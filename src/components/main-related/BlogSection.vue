@@ -73,14 +73,16 @@ export default {
         background-color: #f5f5f5;
         position: relative;
         text-align: center;
+        padding: $wrapper-padding-xs;
 
         .section-wrapper {
+            padding: 5% 0;
 
             .row {
                 @include flex (column, flex-start, center);
 
                 .col {
-                    
+                    padding: 0;
                     .blog-image-wrapper {
                         overflow: hidden;
                         height: 250px;
@@ -100,6 +102,7 @@ export default {
                     
                     h4 {
                         color: #be9359;
+                        font-size: 1.8rem;
                     }
 
                     p {
@@ -120,24 +123,26 @@ export default {
     }
 
     @media screen and (min-width: 576px) {
+        .blog-container {
+            padding: $wrapper-padding-sm;
+        }
     }
 
     @media screen and (min-width: 768px) {
-    }
-
-    @media screen and (min-width: 1024px) {
         .blog-container {
+            padding: $wrapper-padding-md;
 
             .section-wrapper {
                 max-width: $wrapper-maxw;
                 margin: 0 auto;
-                padding: 4% 0 6%;
                 .row {
                     @include flex (row, flex-start, flex-start);
-
+                    margin-bottom: 50px;
+                
                     .col {
                         width: calc(100% / 3);
-
+                        padding: 0 1rem;
+                    
                         h4 {
                             font-size: 2.2rem;
                         }
@@ -151,5 +156,9 @@ export default {
                 top: 0;
             }
         }   
+    }
+
+    @media screen and (min-width: 1024px) {
+
     }
 </style>
