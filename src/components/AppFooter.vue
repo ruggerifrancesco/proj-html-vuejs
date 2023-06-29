@@ -146,7 +146,12 @@ export default {
                         gap: 1.6rem;
 
                         li a {
-                            color: #6b6b6b;
+                            color: $secondary-color;
+                            transition: all 0.3s ease-in-out;
+
+                            &:hover {
+                                color: $secondary-hover;
+                            }
                         }
                     }
                 }
