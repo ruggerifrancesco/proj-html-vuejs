@@ -20,10 +20,26 @@
                             </ul>
                             <span class="section-subtitle">Follow us</span>
                             <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                                <li>
+                                    <a href="#">
+                                        <font-awesome-icon :icon="['fab', 'facebook-f']" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <font-awesome-icon :icon="['fab', 'twitter']" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <font-awesome-icon :icon="['fab', 'instagram']" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <font-awesome-icon :icon="['fab', 'youtube']" />
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                         <div class="col">
