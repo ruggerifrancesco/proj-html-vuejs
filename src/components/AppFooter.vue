@@ -5,13 +5,19 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col">
-                            Test
+                            <div class="image-wrapper">
+                                <img src="../assets/footer/avadabarbers_footer_shop_image.png" alt="General Products Display">
+                            </div>
+
+                            <a href="#" class="btn-custom">
+                                Shop our range now
+                            </a>
                         </div>
                         <div class="col">
                             <div class="logo-wrapper">
                                 <img src="../assets/logo/avadabarbers-logo-x2.png" alt="Main Logo">
                             </div>
-                            <ul>
+                            <ul class="contact-infos">
                                 <li>Avada Barbers</li>
                                 <li>123 New York Street</li>
                                 <li>New York City</li>
@@ -19,7 +25,7 @@
                                 <li>+1 (555) 555-1212</li>
                             </ul>
                             <span class="section-subtitle">Follow us</span>
-                            <ul>
+                            <ul class="social-list">
                                 <li>
                                     <a href="#">
                                         <font-awesome-icon :icon="['fab', 'facebook-f']" />
@@ -43,7 +49,13 @@
                             </ul>
                         </div>
                         <div class="col">
-                            Test
+                            <div class="image-wrapper">
+                                <img src="../assets/footer/avadabarbers_footer_shop_image.png" alt="General Products Display">
+                            </div>
+
+                            <a href="#" class="btn-custom">
+                                Book your Appointment
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -82,6 +94,7 @@ export default {
     .footer-primary {
         width: 100%;
         height: 100%;
+        
         .section-wrapper {
             @include flex (row, center, center);
             height: calc(100% - $footer-bottom-height);
@@ -89,9 +102,47 @@ export default {
         .container-fluid {
             .row {
                 .col {
-                    padding: 0 3%;
+                    @include flex(column, flex-start, center);
+                    padding: 0 2%;
                     text-align: center;
                     color: #686868;
+
+                    .image-wrapper {
+                        img {
+                            @include imgElement (auto, contain, top center);
+                        }
+                    }
+
+                    .btn-custom {
+                        font-size: 14px;
+                        padding: 12px 25px;
+                    }
+
+                    .logo-wrapper {
+                        width: 60%;
+                        margin-bottom: 30px;
+
+                        img {
+                            @include imgElement (auto, contain, top center)
+                        }
+                    }
+                    .contact-infos {
+                        margin: 16px 0 56px;
+                        @include flex(column, flex-start, center);
+                        gap: 0.5rem;
+                    }
+
+                    .section-subtitle {
+                        margin-bottom: 15px;
+                    }
+                    .social-list {
+                        @include flex (row, center, center);
+                        gap: 1.6rem;
+
+                        li a {
+                            color: #6b6b6b;
+                        }
+                    }
                 }
                 .col:first-child,
                 .col:last-child {
