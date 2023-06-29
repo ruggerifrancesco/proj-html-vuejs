@@ -4,7 +4,7 @@
         <ServicesSection />
         <ProductsSection :productsArray="productsList" />
         <ReviewsSection :reviewsArray="reviewsList"/>
-        <BlogSection />
+        <BlogSection :blogsArray="blogsList"/>
     </main>
 </template>
 
@@ -76,6 +76,23 @@ export default {
                     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis eleifend ante ut sagittis. Sed sodales, urna et imperdiet placerat, ex nisi aliquam orci, ac varius odio libero et arcu.',
                     name: 'Mark Wilson'
                 },
+            ],
+            blogsList: [
+                {
+                    src: 'blog/avadabarbers-second-blog-700x441.jpg',
+                    title: 'Avada Barbers Now Open',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut dapibus magna.'
+                },
+                {
+                    src: 'blog/avadabarbers-choosing-blog-700x441.jpg',
+                    title: 'Choosing The Right Barber',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut dapibus magna.'
+                },
+                {
+                    src: 'blog/avadabarbers-ourservice-blog-700x441.jpg',
+                    title: 'Quick Service Guide',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut dapibus magna.'
+                },
             ]
         }
     },
@@ -88,6 +105,9 @@ export default {
 
     main {
         margin-bottom: 620px;
+
+        // Fix bug in mobile version, gap between reviews and blog section
+        background-color: white;
     }
     
 </style>

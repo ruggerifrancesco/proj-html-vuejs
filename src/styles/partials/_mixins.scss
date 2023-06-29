@@ -16,6 +16,7 @@
 
 @mixin imgElement ($height, $fit, $position) {
     width: 100%;
+    display: block;
     height: $height;
     object-fit: $fit;
     object-position: $position;

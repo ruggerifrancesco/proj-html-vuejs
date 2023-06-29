@@ -8,7 +8,7 @@
             <div class="container-fluid">
                 <div class="row">
 
-                    <div class="col review-user-card" v-for="review in reviewsArray">
+                    <div class="col" v-for="review in reviewsArray">
                         <p>
                             {{ review.text }}
                         </p>
@@ -51,7 +51,7 @@ export default {
 
             .row {
                 @include flex (column, flex-start, flex-start);
-                .review-user-card {
+                .col {
                     @include flex (column, flex-start, center);
                     padding: 0 6%;
                     margin-bottom: 40px;
@@ -87,12 +87,12 @@ export default {
 
     @media screen and (min-width: 576px) {
 
-        .reviews-container {
+        .col {
             padding: $wrapper-padding-sm;
         }
     }
     @media screen and (min-width: 768px) {
-        .reviews-container {
+        .col {
             padding: $wrapper-padding-md;
         }
     }
@@ -105,7 +105,7 @@ export default {
                 .row {
                     @include flex (row, flex-start, flex-start);
 
-                    .review-user-card {
+                    .col {
                         padding: 0 30px;
                     }
                 }

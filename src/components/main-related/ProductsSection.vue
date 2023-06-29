@@ -1,6 +1,7 @@
 <template>
     <section id="products" class="products-container">
 
+        <!-- Mobile & Tablet -->
         <div class="products-list-mobile">
             <span class="section-subtitle">
                 We have you covered
@@ -28,6 +29,7 @@
             </a>
         </div>
 
+        <!-- Desktop -->
         <div class="products-list-desktop">
             <span class="section-subtitle">
                 We have you covered
