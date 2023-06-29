@@ -50,7 +50,7 @@
                         </div>
                         <div class="col">
                             <div class="image-wrapper">
-                                <img src="../assets/footer/avadabarbers_footer_shop_image.png" alt="General Products Display">
+                                <img src="../assets/footer/avadabarbers_footer_appointment_image.png" alt="General Products Display">
                             </div>
 
                             <a href="#" class="btn-custom">
@@ -108,6 +108,8 @@ export default {
                     color: #686868;
 
                     .image-wrapper {
+                        margin-bottom: 30px;
+                        
                         img {
                             @include imgElement (auto, contain, top center);
                         }
