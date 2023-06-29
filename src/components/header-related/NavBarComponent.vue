@@ -68,7 +68,7 @@ export default {
     mounted() {
         window.addEventListener('scroll', this.handleScroll);
 
-        // OffCanvas
+        // OffCanvas Hiding
         const offcanvasLinks = document.querySelectorAll('.offcanvas-body ul li a');
         offcanvasLinks.forEach(link => {
             link.addEventListener('click', this.closeOffcanvas);

@@ -130,7 +130,7 @@ export default {
             .section-wrapper {
                 max-width: $wrapper-maxw;
                 margin: 0 auto;
-                padding: 28px 0 12% 0;
+                padding: 6% 0 12% 0;
                 .row {
                     @include flex (row, flex-start, flex-start);
                     .service-icon img {

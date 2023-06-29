@@ -183,7 +183,7 @@ export default {
             }
             .products-list-desktop {
                 display: block;
-                padding: 3% 6% 60px 6%;
+                padding: 6% 6% 60px 6%;
                 text-align: center;
 
                 .products-list-wrapper {
