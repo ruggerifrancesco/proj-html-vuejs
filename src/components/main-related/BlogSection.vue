@@ -1,7 +1,17 @@
 <template>
     <!-- Blog Section -->
     <section id="blog" class="blog-container">
-        
+        <div class="section-wrapper">
+            <span class="section-subtitle">
+                Tales from the barber shop
+            </span>
+            <h3>Recent Blog Post</h3>
+
+            <div class="articles-list-wrapper">
+                
+            </div>
+        </div>
+
     <SectionDivider class="sectionDivider" />
     </section>
 </template>
