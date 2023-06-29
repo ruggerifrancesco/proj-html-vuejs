@@ -157,11 +157,11 @@ export default {
                             }
 
                             &.active a {
-                                color: #b08852;
+                                color: $primary-color;
                             }
 
                             &:hover a {
-                                color: #b08852;
+                                color: $primary-color;
                             }
 
                             a {

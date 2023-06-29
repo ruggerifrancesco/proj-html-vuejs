@@ -61,7 +61,7 @@ export default {
 @use '../../styles/partials/_variables.scss' as *;
 
     h4 {
-        color: #be9359;
+        color: $primary-color;
         font-size: 2rem;
         margin-bottom: 20px;
     }

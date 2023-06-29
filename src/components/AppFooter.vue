@@ -175,7 +175,7 @@ export default {
                 color: #606060;
 
                 strong {
-                    color: #be9359;
+                    color: $primary-color;
                     font-weight: 400;
                 }
             }

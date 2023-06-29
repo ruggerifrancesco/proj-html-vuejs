@@ -21,7 +21,7 @@ export default {
 </script>
 
 <style lang="scss">
+@use './styles/partials/_variables.scss' as *;
 @import "bootstrap/scss/bootstrap";
 @import "./styles/general.scss";
-
 </style>

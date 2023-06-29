@@ -95,11 +95,11 @@ export default {
 @use '../../styles/partials/_variables.scss' as *;
 
     h4 {
-        color: #be9359;
+        color: $primary-color;
         font-size: 2rem;
     }
     .special-product-title {
-        color: #b0b0b0;
+        color: $secondary-color;
         font-size: 4rem;
         margin-bottom: 30px;
     }
@@ -211,7 +211,7 @@ export default {
                 height: 450px;
                 max-width: calc( 1140px + 0px );
                 background-color: black;
-                border-top: 4px solid #be9359;
+                border-top: 4px solid $primary-color;
                 margin: -50px auto 0;
                 @include flex (row, flex-start, null);
 

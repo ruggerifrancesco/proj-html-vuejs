@@ -76,7 +76,7 @@ export default {
         .intro-divider {
             height: 4px;
             width: 50%;
-            background-color: #be9359;
+            background-color: $primary-color;
         }
 
         .subtitle-container {
@@ -104,7 +104,7 @@ export default {
         .hero-introduction {
             .intro-divider {
                 width: 40%;
-                background-color: #be9359;
+                background-color: $primary-color;
             }
         }
     }
@@ -127,7 +127,7 @@ export default {
             
             .intro-divider {
                 height: 6px;
-                background-color: #be9359;
+                background-color: $primary-color;
             }
         }
     }
