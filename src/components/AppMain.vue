@@ -4,12 +4,7 @@
         <ServicesSection />
         <ProductsSection :productsArray="productsList" />
         <ReviewsSection :reviewsArray="reviewsList"/>
-
-        <!-- Blog Section -->
-        <section id="blog" class="blog-container">
-            <!-- Component And for in JS -->
-            <SectionDivider class="sectionDivider" />
-        </section>
+        <BlogSection />
     </main>
 </template>
 
@@ -19,6 +14,7 @@ import AwardsSection from './main-related/AwardsSection.vue';
 import ServicesSection from './main-related/ServicesSection.vue';
 import ProductsSection from './main-related/ProductsSection.vue';
 import ReviewsSection from './main-related/ReviewsSection.vue';
+import BlogSection from './main-related/BlogSection.vue';
 
 export default {
     name: 'AppMain',
@@ -28,6 +24,7 @@ export default {
         ServicesSection, 
         ProductsSection,
         ReviewsSection,
+        BlogSection
     },
     data() {
         return {
@@ -93,25 +90,4 @@ export default {
         margin-bottom: 620px;
     }
     
-    .blog-container {
-        background-color: #f5f5f5;
-        height: 800px;
-        position: relative;
-
-        .sectionDivider {
-            rotate: 180deg;
-            position: relative;
-            top: 0;
-        }
-    }
-
-    @media screen and (min-width: 576px) {
-    }
-
-    @media screen and (min-width: 768px) {
-    }
-
-    @media screen and (min-width: 1024px) {
-    }
-
 </style>
